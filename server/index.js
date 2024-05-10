@@ -31,6 +31,9 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
+app.get('/',(req,res)=>{
+    res.send('server is running')
+})
 app.get('/getdatas', (req, res) => {
     Resumemodel.find()
         .then((data) => {
