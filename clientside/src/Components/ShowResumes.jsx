@@ -10,7 +10,7 @@ const ShowResumes = () => {
     useEffect(() => {
         const fetchResumes = async () => {
             try {
-                const response = await axios.get('http://localhost:10000/getdatas');
+                const response = await axios.get('https://resumeserver-git-master-mhd-sulu-786s-projects.vercel.app/getdatas');
                 setResumes(response.data);
             } catch (error) {
                 console.error('Error fetching resumes:', error);
@@ -20,7 +20,7 @@ const ShowResumes = () => {
     }, []);
 
     const handleDelete = (id) => {
-        axios.delete(`http://localhost:10000/deletedata/${id}`)
+        axios.delete(`https://resumeserver-git-master-mhd-sulu-786s-projects.vercel.app/deletedata/${id}`)
             .then(() => {
                 console.log('Resume deleted successfully');
              
