@@ -4,6 +4,7 @@ const cors = require('cors');
 const multer = require('multer');
 const path = require('path');
 const Resumemodel = require('./model/resumemodel');
+require('dotenv').config()
 
 const app = express();
 const PORT = process.env.PORT || 10000;
@@ -12,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static('public'));
 
-mongoose.connect('mongodb://localhost:27017/resumebase')
+mongoose.connect(`mongodb+srv://${process.env.USER_NAME}:${process.env.PASSWROD}@cluster0.bnwrbzv.mongodb.net/resumebase`)
     .then(() => {
         console.log('MongoDB connected successfully');
     })
