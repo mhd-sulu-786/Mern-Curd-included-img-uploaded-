@@ -4,9 +4,10 @@ const cors = require('cors');
 const multer = require('multer');
 const path = require('path');
 const Resumemodel = require('./model/resumemodel');
+const router = express.Router()
 require('dotenv').config()
 
-const app = express();
+const app = express.Router();
 const PORT = process.env.PORT || 10000;
 
 app.use(cors());
