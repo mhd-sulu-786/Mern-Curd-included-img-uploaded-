@@ -7,7 +7,7 @@ const Resumemodel = require('./model/resumemodel');
 const router = express.Router()
 require('dotenv').config()
 
-const app = express.Router();
+const app = express();
 const PORT = process.env.PORT || 10000;
 
 app.use(cors());
