@@ -24,7 +24,7 @@ const EdithResume = () => {
     });
 
     useEffect(() => {
-        axios.get(`https://resumeserver-git-master-mhd-sulu-786s-projects.vercel.app/getdatasId/` + id)
+        axios.get(`https://resume-builder-server-z9k9.onrender.com/getdatasId/` + id)
             .then((response) => {
                 setref(response.data);
             })
@@ -56,7 +56,7 @@ const EdithResume = () => {
             formDataToSend.append(key, formData[key]);
         }
         try {
-            const response = await axios.put(`https://resumeserver-git-master-mhd-sulu-786s-projects.vercel.app/update/` + id, formDataToSend);
+            const response = await axios.put(`https://resume-builder-server-z9k9.onrender.com/update/` + id, formDataToSend);
             console.log('Response:', response.data);
             navigate('/show');
         } catch (error) {
