@@ -44,7 +44,7 @@ const CreateResume = () => {
             formDataToSend.append(key, formData[key]);
         }
         try {
-            const response = await axios.post('https://resumeserver-git-master-mhd-sulu-786s-projects.vercel.app/postdatas', formDataToSend);
+            const response = await axios.post('https://resume-builder-server-z9k9.onrender.com/postdatas', formDataToSend);
             console.log('Response:', response.data);
             navigater('/show');
         } catch (error) {
