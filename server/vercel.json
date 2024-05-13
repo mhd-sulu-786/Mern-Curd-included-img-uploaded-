@@ -7,8 +7,30 @@
     }
   ],
   "routes": [
+    { "handle": "filesystem" },
     {
-      "src": "/(.*)"
+      "src": "/getdatas",
+      "dest": "/index.js"
+    },
+    {
+      "src": "/getdatasId/:id",
+      "dest": "/index.js"
+    },
+    {
+      "src": "/postdatas",
+      "dest": "/index.js"
+    },
+    {
+      "src": "/update/:id",
+      "dest": "/index.js"
+    },
+    {
+      "src": "/deletedata/:id",
+      "dest": "/index.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.js"
     }
   ]
 }
