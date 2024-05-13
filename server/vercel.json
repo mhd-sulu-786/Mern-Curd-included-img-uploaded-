@@ -1,5 +1,8 @@
 {
   "version": 2,
+  "env": {
+    "MONGODB_URI": "mongodb+srv://muhammadsulaimant367:tCWCfGux4dizCKnH@<cluster>/<database>?retryWrites=true&w=majority"
+  },
   "builds": [
     {
       "src": "index.js",
@@ -7,30 +10,6 @@
     }
   ],
   "routes": [
-    { "handle": "filesystem" },
-    {
-      "src": "/getdatas",
-      "dest": "/index.js"
-    },
-    {
-      "src": "/getdatasId/:id",
-      "dest": "/index.js"
-    },
-    {
-      "src": "/postdatas",
-      "dest": "/index.js"
-    },
-    {
-      "src": "/update/:id",
-      "dest": "/index.js"
-    },
-    {
-      "src": "/deletedata/:id",
-      "dest": "/index.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.js"
-    }
+    { "src": "/(.*)", "dest": "/index.js" }
   ]
 }
