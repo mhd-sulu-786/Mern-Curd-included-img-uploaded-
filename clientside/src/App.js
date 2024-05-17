@@ -7,8 +7,8 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<CreateResume />} />
-          <Route path="/show" element={<ShowResumes />} />
+          <Route path="/add" element={<CreateResume />} />
+          <Route path="/" element={<ShowResumes />} />
           <Route path="/edit/:id" element={<EdithResume />} />
         </Routes>
       </BrowserRouter>
