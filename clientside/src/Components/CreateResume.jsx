@@ -44,11 +44,10 @@ const CreateResume = () => {
             formDataToSend.append(key, formData[key]);
         }
         try {
-<<<<<<< HEAD
-            const response = await axios.post('http://localhost:10000/postdatas', formDataToSend);
-=======
+
+
             const response = await axios.post('https://resume-builder-server-z9k9.onrender.com/postdatas', formDataToSend);
->>>>>>> 70f25ba9b1d9b1fec47d52870899405e406072cb
+
             console.log('Response:', response.data);
             navigater('/show');
         } catch (error) {

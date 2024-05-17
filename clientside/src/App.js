@@ -7,8 +7,13 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
+<<<<<<< HEAD
           <Route path="/add" element={<CreateResume />} />
           <Route path="/" element={<ShowResumes />} />
+=======
+          <Route path="/" element={<ShowResumes />} />
+          <Route path="/add" element={<CreateResume />} />
+>>>>>>> 747eeb6 (update edith .jsx)
           <Route path="/edit/:id" element={<EdithResume />} />
         </Routes>
       </BrowserRouter>
