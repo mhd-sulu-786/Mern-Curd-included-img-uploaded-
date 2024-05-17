@@ -34,11 +34,10 @@ const ShowResumes = () => {
     return (
         <Container fluid className='bg-dark d-flex justify-content-center p-3 flex-row w-100' style={{ minHeight: '100vh', display: 'flex' }}>
             <Row xs={1} md={2} lg={3} xl={4} className="w-100 g-4 p-2 d-flex justify-content-center align-items-center gap-3">
-<<<<<<< HEAD
-                       <Button href="/add" >Add Resume</Button>
-=======
+                    
+
                 <Button href='/add' className='w-100 ' >Add Resume </Button>
->>>>>>> 747eeb6 (update edith .jsx)
+
                 {resumes.map((resume, index) => (
                     <Card key={index} className='col-xs-12 col-md-4 col-xl-3  p-2 d-flex text-center  justify-content-center align-items-center ' style={{textTransform:'uppercase'}}>
                         <Card.Img variant="top" style={{ width: '100px', height: '100px', borderRadius: '50%',border:'2px solid green' }} src={'http://localhost:10000/image/' + resume.photo} />
