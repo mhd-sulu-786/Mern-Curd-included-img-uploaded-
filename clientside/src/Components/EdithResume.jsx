@@ -71,7 +71,7 @@ const EdithResume = () => {
         try {
             const response = await axios.put(`https://resume-builder-server-z9k9.onrender.com/update/${id}`, formDataToSend);
             console.log('Response:', response.data);
-            navigate('/show');
+            navigate('/');
         } catch (error) {
             console.error('Error updating resume data:', error);
         }
